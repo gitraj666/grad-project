@@ -1,0 +1,35 @@
+spring:
+  datasource: 
+    url : jdbc:mysql://35.193.0.204/smartinterviewdb?user=root
+    username: root
+    password:
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/smartinterviewdb
+#    username: root
+#    password: root1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+#    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    
+  mail: 
+    host: smtp.gmail.com
+    username: intvwscheduler@gmail.com
+    password: qzbqseyhkdlqdkjm
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
+    
+ 
+#  profiles:
+#    active:
+#    - dev
